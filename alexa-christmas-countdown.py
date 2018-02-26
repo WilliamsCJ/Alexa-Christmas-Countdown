@@ -12,8 +12,8 @@ def build_speechlet_response(title, output, reprompt_text, should_end_session):
         },
         'card': {
             'type': 'Simple',
-            'title': "SessionSpeechlet - " + title,
-            'content': "SessionSpeechlet - " + output
+            'title': title,
+            'content': output
         },
         'reprompt': {
             'outputSpeech': {
@@ -48,23 +48,23 @@ def do_welcome():
 
 def when_is_christmas():
     session_attributes = {}
-    card_title = "Christmas is on December 25th"
+    card_title = "When is Christmas?"
     speech_output = "Christmas is on December 25th."
     reprompt_text = "Sorry I didn't get that."\
                     "Try again!"
-    should_end_session = False
+    should_end_session = True
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
 
 
 def how_long_until_christmas():
     session_attributes = {}
-    card_title = "There are " + get_date() + " days until Christmas."
+    card_title = "How long until Christmas?"
     speech_output =  "There are " + get_date() + " days until Christmas. "\
                      "I'm so excited!"
     reprompt_text = "Sorry I didn't get that."\
                    "Ask again!"
-    should_end_session = False
+    should_end_session = True
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
 
@@ -89,7 +89,7 @@ def help_response():
 
 def handle_session_end_request():
     card_title = "Session Ended"
-    speech_output = "Thank you for using Alexa's Christmas Countdown." \
+    speech_output = "Thank you for using Alexa's Christmas Countdown. " \
                     "Have a great day!"
     # Setting this to true ends the session and exits the skill.
     should_end_session = True
