@@ -7,4 +7,4 @@ The purpose of this Skill is to help me learn how to use the Alexa platform, wit
 
 Large parts of the code have been taken from Amazon's examples of how to implement a skill in Python.
 
-![Christmas Countdown Logo](images/alexa-christmas-countdown-icon-original.png)
+![Christmas Countdown Logo](alexa-christmas-countdown-icon-original.png)
