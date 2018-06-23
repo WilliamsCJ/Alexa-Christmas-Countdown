@@ -1,4 +1,7 @@
 # Alexa-Christmas-Countdown
+
+[![Build Status](https://travis-ci.org/CJWilliams20/Alexa-Christmas-Countdown.svg?branch=master)](https://travis-ci.org/CJWilliams20/Alexa-Christmas-Countdown)
+
 Alexa, how many days until Christmas?
 
 An Alexa Skill that tells you how many days it is until Christmas.
