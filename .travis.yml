@@ -18,6 +18,8 @@ before_deploy:
 deploy:
   provider: s3
   bucket: alexa-christmas-countdown-s3
+  access_key_id:
+  secret_access_key:
   region: eu-west-1
   local-dir: dist
   acl: private
