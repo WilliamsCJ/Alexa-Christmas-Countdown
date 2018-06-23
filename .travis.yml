@@ -1,0 +1,10 @@
+language: python
+python:
+  - "2.7"
+install: true
+deploy:
+  file: "alexa-christmas-countdown.py"
+  provider: lambda
+  function_name: "AlexaChristmasCountdown"
+  region: "eu-west-1"
+  publish: false
