@@ -1,4 +1,4 @@
-from alexa_christmas_countdown import lambda_handler
+from src/alexa_christmas_countdown import lambda_handler
 import pytest
 
 # Creating the json files
