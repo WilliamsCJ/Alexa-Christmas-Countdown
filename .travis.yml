@@ -27,5 +27,4 @@ deploy:
   on:
     branch: master
 after_deploy:
-  script:
   - aws lambda update-function-code --function-name 'AlexaChristmasCountdown' --s3-bucket 'alexa-christmas-countdown-s3' --s3-key '$TRAVIS_COMMIT.zip'
