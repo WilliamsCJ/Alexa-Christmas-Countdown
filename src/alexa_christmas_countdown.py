@@ -90,7 +90,7 @@ def help_response():
 def handle_session_end_request():
     card_title = "Session Ended"
     speech_output = "Thank you for using Alexa's Christmas Countdown. " \
-                    "Have a great day!"
+                    "Have a merry day!"
     # Setting this to true ends the session and exits the skill.
     should_end_session = True
     return build_response({}, build_speechlet_response(
